@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BLOG-JammingTools</title>
+  <link rel="stylesheet" href="JammingTools.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/4aa03db034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="subheader">
+    <nav>
+      <a href="jammingtools.html"><img src="images\Jamming Tools-1.png"> </a>
+      <div class="nav-links" id="navLinks" >
+        <i class="fa fa-times" onclick="hideMenu()" ></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about us.html">ABOUT</a></li>
+          <li><a href="shop (2).html">SHOP</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="account.html">ACCOUNT</a></li>
+           <a href="">
+            <img src="images/icons8-shopping-cart-30.png" alt="image unavailable">
+           </a> 
+        </ul>
+          
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <h1>blog</h1>
+  </section>
+
+  <!--blog page content-->
+
+  <section class="blog-content">
+
+    <div class="row">
+      <div class="blog-left">
+        <img src="images/mixer2.jpeg" >
+        <h2>OUR ACHIEVEMENTS AND GOALS  </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Delectus sequi neque adipisci iste nihil aperiam animi dolores nesciunt.
+            Sed aspernatur molestiae eum deserunt esse unde libero consectetur laborum ipsam officia?
+        </p>
+        <br>
+        <p> 
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Mollitia rerum earum molestiae repellat dicta hic est iure, accusantium dolorem, ea pariatur fuga nostrum nihil cupiditate similique adipisci ullam corrupti laboriosam.
+        </p>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident numquam, voluptatum dolore necessitatibus
+           soluta accusantium nemo laudantium ut iste sequi tempore architecto?
+           Vel ea consequatur quibusdam ipsum excepturi! Nihil, nostrum!
+        </p>
+
+        <div class="comment-box">
+
+          <h3>Leave a comment</h3>
+
+          <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+             <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">Post Comment</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="blog-right">
+        <h3>POST CATOGARIES</h3>
+          <div>
+            <span>Business Analytics: </span>    
+            <span>21</span>
+          </div>   
+          <br>
+          <div>
+            <span>Data science: </span>
+            <span>51</span>
+          </div>
+          <br>
+          <div>
+            <span>machine learning: </span>
+            <span>32</span>
+          </div>
+          <br>
+          <div>
+            <span>computer science: </span>
+            <span>64</span>
+          </div>
+          <br>
+          <div>
+            <span>music production: </span>
+            <span>550</span>
+          </div>
+          <br>
+          <div>
+            <span>autocad: </span>
+            <span>50</span>
+          </div>
+          <br>
+          <div>
+            <span>sound engineering: </span>
+            <span>230</span>
+          </div>
+    </div>
+  </section>
+ 
+
+<!--footer-->
+
+<section class="footer">
+  <h4>COURSES</h4>
+  <p> apne site ka poorna gyaan </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i> 
+  </div>
+  <p>Made  by  Hemang Vyas</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+   <!--JavaScript for Toggle Menu-->
+ 
+  <script>
+
+   
+    var navLinks=document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+
+  </script>
+</body>
+</html>

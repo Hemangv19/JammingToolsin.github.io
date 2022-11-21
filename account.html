@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ACCOUNT-JammingTools</title>
+  <link rel="stylesheet" href="JammingTools.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/4aa03db034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="subheader">
+    <nav>
+      <a href="jammingtools.html"><img src="images\Jamming Tools-1.png" alt="error loading image"> </a>
+      <div class="nav-links" id="navLinks" >
+        <i class="fa fa-times" onclick="hideMenu()" ></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about us.html">ABOUT</a></li>
+          <li><a href="shop (2).html">SHOP</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="account.html">ACCOUNT</a></li>
+           <a href="">
+            <img src="images/icons8-shopping-cart-30.png" alt="image unavailable">
+           </a> 
+        </ul>
+          
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <h1>ACCOUNT </h1>
+  </section>
+
+ <div class="account-page">
+  <div class="container">
+    <div class="row2">
+      <div class="col-2">
+        <img src="images/secure-shield-3943025-3273329.webp" alt="image unavailable" >
+      </div>
+      <div class="col-2">
+        <div class="form-container">
+          <div class="form-btn">
+             
+             <span onclick="register()">Register</span>
+             <hr id="Indicator">
+          </div>
+
+       
+          <form id="RegForm">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <!--footer-->
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p> apne site ka poorna gyaan </p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i> 
+  </div>
+  <p>Made by  Hemang Vyas</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+   <!--JavaScript for Toggle Menu-->
+ 
+  <script>
+
+   
+    var navLinks=document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+
+  </script>
+
+  <!--js for toggle form-->
+  <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+        function register(){
+
+
+          RegForm.style.transform = translateX(0px)
+          LoginForm.style.transform = translateX(0px)
+        }
+
+        function login(){
+
+
+          RegForm.style.transform = translateX(300px)
+          LoginForm.style.transform = translateX(300px)
+        }
+  </script>
+</body>
+
+
+
+
+
+</html>
